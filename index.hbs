@@ -1,0 +1,32 @@
+{{!< default}}
+{{> montagbanner}}
+{{> logobar}}
+{{> navmenu}}
+<div id="homepageposts">
+  {{#foreach posts}}
+  <div class="post-wrapper">
+    <div class="post-info-wrapper">
+      <div class="post-info">
+        <a href={{url}}>
+          {{#if featured}}
+            <div class="featured-post-image">
+              <img src="{{img_url feature_image}}" class="postimage" />
+            </div>
+            <div class="featured-post-title">
+              {{title}}
+            </div>
+          {{else}}
+            <div class="post-image">
+              <img src="{{img_url feature_image}}" class="postimage" />
+            </div>
+            <div class="post-title">
+              {{title}}
+            </div>
+          {{/if}}
+        </a>
+      </div>
+    </div>
+  </div>
+  {{/foreach}}
+</div>
+{{pagination}}

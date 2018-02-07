@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{! Document Settings from zero }}
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {{! Page Meta from zero}}
+    <title>{{meta_title}}</title>
+	  <meta name="description" content="{{meta_description}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image"              content="{{asset "images/montagheaderbannerFB.png"}}" />
+	  <link rel="icon" type="image/png" sizes="32x32" href="{{asset "images/favicon.png"}}">
+    {{! Adding Bootstrap 4 }}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "libs/fonts/ds-digital/ds-digital.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/gatnom.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/gatnommobile.css"}}">
+    {{! Ghost outputs important style and meta data with this tag }}
+	  {{ghost_head}}
+    <style>
+    .embed{
+      max-width: 100%;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    /*Issues pages*/
+    .issuespic{
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      padding: 0;
+    }
+    .issues-image{
+      width: 96%;
+      height: auto;
+      padding: 2%;
+    }
+    .issuestext{
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      padding-top: 2%;
+    }
+    @media (max-width:992px){
+      .issuespic{
+        display: block;
+        width: 100%;
+      }
+      .issues-image{
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+      .issuestext{
+        display: block;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 5%;
+      }
+    }
+    </style>
+  </head>
+  <div id="content-wrapper">
+    {{{body}}}
+  </div>
+    {{>footer}}
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+    <script type="text/javascript" src="{{ asset "js/jquery-3.1.1.min.js"}}"></script>
+    <script type="text/javascript" src="{{ asset "js/gatnom.js"}}"></script>
+    {{! jQuery, Tether, and Bootstrap js}}
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</html>

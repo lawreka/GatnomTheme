@@ -1,0 +1,124 @@
+@media (max-width:992px){
+  /*Universal*/
+  body{
+    min-width: 320px;
+  }
+  /*Typography*/
+  /*Montag banner*/
+  /*Logo bar*/
+  #logobar{
+    height: 3.5em;
+  }
+  #montag-logo{
+    width: 50%;
+  }
+  .montaglogo{
+    height: 3.5em;
+  }
+  .hamburgermenu{
+    height: 1.5em;
+    margin-top: -0.2em;
+  }
+  #hamburger-menu{
+    width: 50%;
+  }
+  #subtitle-container{
+    display: none;
+  }
+  #by-grover{
+  }
+  /*Navmenu*/
+  #nav-menu-container{
+
+  }
+  #navmenu{
+    margin-top: 0;
+  }
+  .menulink{
+
+  }
+
+  /*Pagination */
+  .pagination-right{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    position: initial;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  .pagination-left{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    position: initial;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  /*Footer */
+  #footer{
+    text-align: center;
+    text-align: -webkit-center;
+    margin-top:8em;
+  }
+  #footerlogo{
+    display: block;
+  }
+  .montagfooterlogo{
+    height: 2em;
+  }
+  #sociallinks{
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+  /*Posts on home page*/
+  #homepageposts{
+    margin: 1em;
+    margin-top: 3em;
+  }
+  .post-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .postimage{
+    width: 100%;
+    display: block;
+  }
+  .post-image{
+    width: 100%;
+  }
+  .post-title{
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .featured-post-title{
+    width: 100%;
+    font-size: 1.5em;
+  }
+  /*Posts on post page*/
+  .postpage-post-wrapper{
+    width: 90%;
+  }
+  .post-author{
+    display: block;
+    text-align: center;
+    text-align: -webkit-center;
+    float: none;
+    margin: 0.5em;
+  }
+  .post-date{
+    display: block;
+    text-align: center;
+    text-align: -webkit-center;
+    float: none;
+    margin: 0.5em;
+  }
+  .post-title{
+    margin-top: 1em;
+  }
+}

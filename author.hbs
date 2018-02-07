@@ -1,0 +1,31 @@
+{{!< default}}
+{{> stickylogos}}
+{{#author}}
+  <div class="author-info">
+    <div class="author-name">
+      <a href={{website}}>{{name}}</a>
+    </div>
+    <div class="author-location">
+      {{location}}
+    </div>
+    <div class="author-bio">
+      {{bio}}
+    </div>
+    <div style="padding-top:0.5em;">
+    {{name}}'s last five posts:
+    </div>
+  </div>
+{{/author}}
+{{#foreach posts}}
+<div class="author-post-wrapper">
+  <div class="post-info-wrapper">
+    <div class="post-info">
+      <a href={{url}}>
+        <div class="author-post-title">
+          {{title}}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{{/foreach}}
