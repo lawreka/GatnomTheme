@@ -1,7 +1,12 @@
 $(document).ready(function(){
+
+ // menu functionality
   $("#hamburger-menu").on("click", function(){
-    $("#nav-menu-container").toggleClass("disappeared");
-    $(".hamburgermenu").toggleClass("disappeared");
+    $("#menu-container").toggleClass("hidden");
+    $("#homepageposts").toggleClass("hidden");
+    $(".pagination").toggleClass("hidden");
+    $("#footer").toggleClass("hidden");
     return false;
   });
+
 });
