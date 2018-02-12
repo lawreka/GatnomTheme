@@ -29,22 +29,33 @@ a{
   text-decoration: none;
 	color: #00ccff;
 }
+a:hover{
+  text-decoration: underline;
+  color: #00aaff;
+}
 input, textarea{
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 blockquote{
 	font-family: Georgia, Times, 'Times New Roman', serif;
-  color:#00ccff;
+  color:#ff00ff;
   font-style: italic;
   font-size: 1.3em;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 0.5em;
 }
 .blog-post-1.ff-section .post-content a{
 			color:#00ccff;
 }
-
+p{
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 16px;
+}
+b, strong{
+  color: yellow;
+}
 
 /*Montag banner*/
 #montagbanner{
@@ -103,7 +114,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .subtitle{
 	font-size: 14px;
-  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 #hamburger-menu{
   width: auto;
@@ -154,7 +165,7 @@ h1, h2, h3, h4, h5, h6{
 #sticky-logobar{
   width: 100%;
   height: 4.5em;
-  background-color: white;
+  background-color: #0f1020;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -167,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
 }
 #sticky-montag-logo .montaglogo{
   height: 3em;
-  padding-left: 1em;
+  padding-left: 1.5em;
   margin-top: 1em;
 }
 #sticky-grover-logo{
@@ -181,7 +192,7 @@ h1, h2, h3, h4, h5, h6{
 #sticky-grover-logo .groverlogo{
   height: 3.5em;
   margin-top: 0.8em;
-  padding-right: 0.5em;
+  padding-right: 1.5em;
 }
 
 
@@ -191,17 +202,19 @@ h1, h2, h3, h4, h5, h6{
   position: relative;
   left: 0;
   bottom: 0;
-	background-color: #000000;
+	background-color: #0f1020;
 	padding-top: 1em;
   padding-bottom: 1em;
-  margin-top: 4em;
+  margin-top: 6em;
   height: 6em;
+  font-family: 'Open Sans', sans-serif;
 }
 #footerlogo{
 	display: inline-block;
 }
 .montagfooterlogo{
-	height: 3em;
+	height: 2em;
+  margin-left:1em;
 }
 #sociallinks{
 	display: inline-block;
@@ -231,6 +244,7 @@ h1, h2, h3, h4, h5, h6{
 .footertext{
 	color: #ffffff;
 	font-size: 0.7em;
+  margin-left: 1.5em;
 }
 
 /*Posts on home page*/
@@ -238,19 +252,19 @@ h1, h2, h3, h4, h5, h6{
   margin-left: 2em;
   margin-right: 2em;
 }
-.post-wrapper{
+.homepage-post-wrapper{
   width: 100%;
   margin-bottom: 2em;
 }
-.post-info-wrapper{
+.homepage-post-info-wrapper{
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
-.post-title{
+.homepage-post-title{
   width: 100%;
   font-size: 40px;
   display: inline-block;
@@ -258,9 +272,18 @@ h1, h2, h3, h4, h5, h6{
   vertical-align: sub;
   text-align: center;
   margin-top: 10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1em;
 }
-.post-title:hover{
+.homepage-post-title:hover{
   color:#00ccff;
+}
+.homepage-post-excerpt{
+  padding-left: 20%;
+  padding-right: 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 /*Posts on post page*/
@@ -290,9 +313,12 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   text-align: center;
   text-align: -webkit-center;
-}
-.postpage-post-wrapper .post-title:hover{
-  color: #000000;
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: top;
+  color: #00ff00;
+  line-height: 1.2em;
+  padding: 1em;
 }
 .postpage-post-wrapper .post-tags{
   text-align: center;
@@ -316,16 +342,18 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding-bottom: 2em;
+  font-family: 'Open Sans', sans-serif;
 }
 .pagination a{
-  color: #000000;
+  color: #fff;
 }
 .pagination a:hover{
   color:#00ccff;
 }
 .pagination-right{
   display: inline-block;
-  width: 50%;
+  width: 30%;
   text-transform: uppercase;
   text-align: right;
   position: absolute;
@@ -334,7 +362,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .pagination-left{
   display: inline-block;
-  width: 50%;
+  width: 30%;
   text-transform: uppercase;
   text-align: left;
   position: absolute;

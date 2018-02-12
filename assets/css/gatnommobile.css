@@ -23,6 +23,9 @@
   #hamburger-menu{
     width: 50%;
   }
+  .hamburgermenu{
+    max-width:30px;
+  }
 
   /*Menu*/
   .menulink{
@@ -70,12 +73,17 @@
   #homepageposts{
     margin: 1em;
   }
-  .post-wrapper{
+  .homepage-post-wrapper{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
-
+  .homepage-post-info-wrapper{
+    height: auto;
+  }
+  .homepage-post-excerpt{
+    display: none;
+  }
   /*Posts on post page*/
   .postpage-post-wrapper{
     width: 90%;
@@ -96,5 +104,13 @@
   }
   .post-title{
     margin-top: 1em;
+  }
+/*
+  Sticky logos */
+  #sticky-montag-logo .montaglogo{
+    height: 2em;
+  }
+  #sticky-grover-logo .groverlogo{
+    height: 2.3em;
   }
 }

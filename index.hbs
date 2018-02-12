@@ -5,20 +5,17 @@
 {{> menu}}
 <div id="homepageposts">
   {{#foreach posts}}
-  <div class="post-wrapper">
-    <div class="post-info-wrapper" style="background-image:url({{img_url feature_image}});">
-      <div class="post-info">
+  <div class="homepage-post-wrapper">
+    <div class="homepage-post-info-wrapper" style="background-image:url({{img_url feature_image}});">
+      <div class="homepage-post-info">
         <a href={{url}}>
-          {{#if featured}}
-            <div class="featured-post-title">
-              {{title}}
-            </div>
-          {{else}}
-            <div class="post-title">
-              {{title}}
-            </div>
-          {{/if}}
+          <div class="homepage-post-title">
+            {{title}}
+          </div>
         </a>
+        <div class="homepage-post-excerpt">
+          {{excerpt}}
+        </div>
       </div>
     </div>
   </div>
