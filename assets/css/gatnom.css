@@ -46,12 +46,17 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Courier New', Courier, monospace;
   padding-bottom: 0.5em;
 }
+h3{
+  font-size: 35px;
+}
 .blog-post-1.ff-section .post-content a{
 			color:#00ccff;
 }
 p{
   font-family: 'Martel Sans', sans-serif;
-  font-size: 16px;
+  font-size: 21px;
+  color: #e4e4e4;
+  line-height: 1.85;
 }
 b, strong{
   color: yellow;
@@ -120,10 +125,10 @@ b, strong{
   width: auto;
   display: inline-block;
   padding-top: 1em;
-  padding-right: 1em;
-  height: 100%;
   box-sizing: border-box;
   text-align: right;
+  position: absolute;
+  right: 2em;
 }
 .hamburgermenu{
 	max-width: 40px;
@@ -262,7 +267,9 @@ b, strong{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: auto;
+  padding-bottom: 2em;
+  min-height: 60vh;
 }
 .homepage-post-title{
   width: 100%;
@@ -313,7 +320,7 @@ b, strong{
   width: 100%;
   text-align: center;
   text-align: -webkit-center;
-  font-size: 2em;
+  font-size: 40px;
   display: inline-block;
   vertical-align: top;
   color: #00ff00;
@@ -335,6 +342,8 @@ b, strong{
 }
 .post-content-wrapper{
   overflow-wrap: break-word;
+  max-width: 740px;
+  margin: 0 auto;
 }
 /*Pagination*/
 .pagination{
