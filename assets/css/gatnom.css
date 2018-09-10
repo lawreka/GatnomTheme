@@ -3,47 +3,35 @@ body{
   width: 100%;
   height: 100%;
   margin:0;
-  background-color:#0f1020;
-  color:#fff;
+  background-color:#fbfbfb;
+  color:#0f1020;
 	position: relative;
-  min-width: 420px;
 }
+
 img{
   max-width:100%;
 }
 iframe{
   max-width:100%;
 }
-#content-wrapper{
-  min-height: 100%;
-  margin-bottom: -6em;
-}
 .hidden{
   display: none;
 }
 /*Typography*/
 html, body{
-	font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-}
-a{
-  text-decoration: none;
-	color: #00ccff;
-}
-a:hover{
-  text-decoration: underline;
-  color: #00aaff;
+	font-family: "Futura", Trebuchet MS, Arial, sans-serif;
 }
 input, textarea{
-	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-family: "Futura", Trebuchet MS, Arial, sans-serif;
 }
 blockquote{
-	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-family: "Futura", Trebuchet MS, Arial, sans-serif;
   color:#ff00ff;
   font-style: italic;
   font-size: 1.3em;
 }
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Futura", Trebuchet MS, Arial, sans-serif;
   padding-bottom: 0.5em;
 }
 h3{
@@ -58,147 +46,334 @@ p{
   color: #e4e4e4;
   line-height: 1.85;
 }
+    @media (max-width: 700px){
+      p{
+        font-size: 18px;
+      }
+    }
+
 b, strong{
   color: yellow;
 }
 
-/*Montag banner*/
-#montagbanner{
-  width: 100%;
-  height: 40vh;
-  background-image: url(/assets/images/issue2header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*Desktop Navigation*/
+#navigation{
+  display: block;
+}
+    @media (max-width: 700px){
+      #navigation{
+        display: none;
+      }
+    }
+
+#desktopnavigation{
+  display: inline-block;
+}
+#desktopnavigationlinkcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.desktopnavigationlink{
+  padding: 20px;
+  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+#desktopnavigation a{
+  color: #000;
+  text-decoration: none;
+}
+#desktopnavigation a:hover{
+  color: #00ccff;
+  text-decoration: underline;
+}
+#issuesmenu{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 600px;
+}
+#issuesmenulinkcontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+#issuesmenu a{
+  color: #000;
+  text-decoration: none;
+}
+#issuesmenu a:hover{
+  color: #00ccff;
+  text-decoration: underline;
+}
+.issueslink{
+  padding: 20px;
+  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-/*Logo bar*/
+/*Desktop Logobar*/
 #desktop-logobar{
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+    @media (max-width:700px){
+      #desktop-logobar{
+        display: block;
+        float: none;
+        position: static;
+        z-index: 0;
+        width: 100%;
+        text-align:center;
+      }
+    }
+    @media (min-width:701px) and (max-width: 900px){
+      #desktop-logobar{
+      display: block;
+      float: none;
+      position: static;
+      z-index: 0;
+      width: 100%;
+      text-align:center;
+      }
+    }
+
+#desktop-logo-container{
+  width: 240px;
+  padding-left: 16px;
+}
+    @media (min-width:300px) and (max-width: 500px){
+      #desktop-logo-container{
+        padding-left: 16px;
+        margin-left:0;
+        margin-right:0;
+        padding-top:16px;
+      }
+    }
+    @media (min-width:501px) and (max-width:700px){
+      #desktop-logo-container{
+        padding-left: 0px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top: 16px;
+      }
+    }
+    @media (min-width:701px) and (max-width:900px){
+      #desktop-logo-container{
+        padding-left: 0px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+    }
+    @media (min-width: 901px) and (max-width: 1100px){
+      #desktop-logo-container{
+        width: 200px;
+      }
+    }
+
+    @media (min-width:1500px){
+      #desktop-logo-container{
+        width: 350px;
+      }
+    }
+
+#desktop-logotext-container{
+  width: 240px;
+  padding-left: 16px;
+}
+    @media (max-width:700px){
+      #desktop-logotext-container{
+        display: none;
+      }
+    }
+    @media (min-width:701px) and (max-width:900px){
+      #desktop-logotext-container{
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (min-width:901px) and (max-width:1100px){
+      #desktop-logotext-container{
+        width: 200px;
+      }
+    }
+    @media (min-width:1500px){
+      #desktop-logotext-container{
+        width: 350px;
+      }
+    }
+
+#desktop-logotext-container a{
+  color: #00ccff;
+  text-decoration: none;
+}
+#desktop-logotext-container a:hover{
+  color: #00ccff;
+  text-decoration: underline;
+}
+.desktop-logotext{
+  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+#desktopprintissues{
+  display: inline-block;
+  float: right;
+  margin-right: 16px;
+}
+    @media (max-width:700px){
+      #desktopprintissues{
+        display: flex;
+        float: none;
+        margin-right: 0px;
+        padding-top: 16px;
+      }
+    }
+    @media (min-width:700px) and (max-width:900px){
+      #desktopprintissues{
+        display: inline-flex;
+        float: none;
+        margin-right: 0px;
+        padding-top: 16px;
+      }
+    }
+.MONTAGcover{
+  width: 250px;
+  display: inline;
+  padding: 0px 32px;
+}
+    @media (max-width:700px){
+      .MONTAGcover{
+        padding: 0;
+      }
+    }
+    @media (min-width:701px) and (max-width:900px){
+      .MONTAGcover{
+
+      }
+    }
+    @media (min-width:901px) and (max-width:1100px){
+      .MONTAGcover{
+        width: 200px;
+        padding: 0px 8px;
+      }
+    }
+    @media (min-width:1101px){
+      .MONTAGcover{
+        padding: 0px 8px;
+      }
+    }
+
+    @media (min-width:1500px){
+      .MONTAGcover{
+        width: 320px;
+        padding: 0px 16px;
+      }
+    }
+.coverhover{
+  display: inline;
+}
+
+#hamburger-container{
+    display: none;
+}
+    @media (max-width:700px){
+      #hamburger-container{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+    }
+#hamburger-menu{
+  width: 80px;
+  padding:32px;
+}
+#hamburger{
   width: 100%;
-  height: 10vh;
 }
-.logobar-montag-logo{
-  padding-top: 1em;
-  padding-left: 2em;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.logobar-grover-logo{
-  padding-top: 1em;
-  padding-right: 2em;
-  height: 100%;
-  position: absolute;
+#antihamburger-container{
+  display: block;
+  position: fixed;
   top: 0;
   right: 0;
 }
-.logobar-logo{
-  height: 100%;
-  width: auto;
+#antihamburger-menu{
+  width: 60px;
+  padding:32px 40px;
 }
-/* Nav bar*/
-#navbar{
+#antihamburger{
   width: 100%;
-  height: 10vh;
-}
-#mobile-montaglogo{
-  display: none;
-}
-#subtitle-container{
-  padding-top: 1em;
-  padding-left: 2em;
-  width: 90%;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  box-sizing: border-box;
-}
-.subtitle{
-	font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-}
-#hamburger-menu{
-  width: auto;
-  display: inline-block;
-  padding-top: 1em;
-  box-sizing: border-box;
-  text-align: right;
-  position: absolute;
-  right: 2em;
-}
-.hamburgermenu{
-	max-width: 40px;
 }
 
 /*Menu*/
 #menu-container{
   width: 100%;
-  position: absolute;
-  z-index: 3;
-  padding-bottom: 2em;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  background-color: #fff;
 }
 #navmenu{
-  background-color: #001020;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px;
 }
 .menulink{
-  margin-bottom: 1em;
-  margin-left: 40%;
-  margin-right: auto;
-  margin-top: 1em;
+  padding: 16px;
 }
 .menulink a{
-  color: #fff;
+  color: #000;
   font-size: 20px;
   font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  text-decoration: none;
 }
 .menulink a:hover{
   color: #00ccff;
-}
-#print a{
-  color: #ff00ff;
-  font-weight: 800;
-}
-#print a:hover{
-  color: #00ccff;
+  text-decoration: underline;
 }
 
 
 /*Sticky logo bar*/
 #sticky-logobar{
   width: 100%;
-  height: 4.5em;
-  background-color: #0f1020;
+  height: 100px;
+  background-color: #fbfbfb;
   z-index: 2;
   position: fixed;
   top: 0;
 }
 #sticky-montag-logo{
-  width:50%;
   position:fixed;
   top: 0;
   left: 0;
 }
 #sticky-montag-logo .montaglogo{
-  height: 3em;
-  padding-left: 1.5em;
-  margin-top: 1em;
+  width: 200px;
+  padding-left: 16px;
+  margin-top: 16px;
 }
 #sticky-grover-logo{
-  width:50%;
   position:fixed;
   top: 0;
   right: 0;
   text-align:right;
-  padding-right:0.5em;
 }
 #sticky-grover-logo .groverlogo{
-  height: 3.5em;
-  margin-top: 0.8em;
-  padding-right: 1.5em;
+  width:69px;
+  margin-top: 15px;
+  padding-right: 16px;
 }
 
 
@@ -208,81 +383,72 @@ b, strong{
   position: relative;
   left: 0;
   bottom: 0;
-	background-color: #0f1020;
-	padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 6em;
-  height: 6em;
-  font-family: 'Open Sans', sans-serif;
 }
-#footerlogo{
-	display: inline-block;
-}
-.montagfooterlogo{
-	height: 2em;
-  margin-left:1em;
-}
-#sociallinks{
-	display: inline-block;
-	margin-right: 3em;
-	margin-top: 0.5em;
-	position: absolute;
-	right: 0;
-}
-.sociallink{
-	padding: 0.5em;
-}
-.sociallink a{
-  color: #ffffff;
-}
-#soundcloud{
-  max-width: 40px;
-  max-height: 40px;
-  vertical-align: middle;
-  vertical-align: -webkit-baseline-middle;
-}
-#email{
-  max-width: 30px;
-  max-height: 30px;
-  vertical-align: middle;
-  vertical-align: -webkit-baseline-middle;"
+#copyright{
+  padding: 16px;
 }
 .footertext{
-	color: #ffffff;
-	font-size: 0.7em;
-  margin-left: 1.5em;
+	color: #000;
+  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 /*Posts on home page*/
 #homepageposts{
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 200px;
+  position: relative;
 }
+    @media (max-width:700px){
+      #homepageposts{
+        padding-top:16px;
+      }
+    }
+    @media (min-width:700px) and (max-width:900px){
+      #homepageposts{
+        padding-top:16px;
+      }
+    }
+    @media (min-width:900px) and (max-width:1100px){
+      #homepageposts{
+        padding-top:300px;
+      }
+    }
+    @media (min-width:1100px) and (max-width:1500px){
+      #homepageposts{
+        padding-top:380px;
+      }
+    }
+    @media (min-width:1500px){
+      #homepageposts{
+        padding-top: 500px;
+      }
+    }
 .homepage-post-wrapper{
-  width: 100%;
-  margin-bottom: 2em;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 32px;
 }
 .homepage-post-info-wrapper{
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
-  padding-bottom: 2em;
-  min-height: 60vh;
 }
 .homepage-post-title{
-  width: 100%;
-  font-size: 40px;
-  display: inline-block;
-  color: #fff;
-  vertical-align: sub;
-  text-align: center;
-  margin-top: 10vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 1em;
+  height: 500px;
+  font-size: 20px;
+  display: flex;
+  color: #0f1020;
+  font-weight: bold;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
 }
 .homepage-post-title:hover{
   color:#00ccff;
@@ -324,9 +490,10 @@ b, strong{
   font-size: 40px;
   display: inline-block;
   vertical-align: top;
-  color: #00ff00;
+  color: #0f1020;
   line-height: 1.2em;
   padding: 1em;
+  font-weight: bold;
 }
 .postpage-post-wrapper .post-tags{
   text-align: center;
@@ -346,6 +513,9 @@ b, strong{
   max-width: 740px;
   margin: 0 auto;
 }
+.post-content-wrapper a{
+  color: #00ccff;
+}
 /*Pagination*/
 .pagination{
   height: 5em;
@@ -353,31 +523,33 @@ b, strong{
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: 2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Futura", Trebuchet MS, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 .pagination a{
-  color: #fff;
+  color: #000;
+  text-decoration:none;
 }
 .pagination a:hover{
   color:#00ccff;
+  text-decoration: underline;
 }
 .pagination-right{
   display: inline-block;
   width: 30%;
-  text-transform: uppercase;
   text-align: right;
   position: absolute;
   right: 0;
-  padding-right: 1em;
+  padding-right: 16px;
 }
 .pagination-left{
   display: inline-block;
   width: 30%;
-  text-transform: uppercase;
   text-align: left;
   position: absolute;
   left: 0;
-  padding-left: 1em;
+  padding-left: 16px;
 }
 .pagination-center{
   display: block;
@@ -386,7 +558,6 @@ b, strong{
   margin-right: auto;
   text-align: center;
   text-align: -webkit-center;
-  text-transform: uppercase;
 }
 /*Author pages*/
 .author-info{

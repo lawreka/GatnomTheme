@@ -1,42 +1,4 @@
 @media (max-width:700px){
-  /*Universal*/
-  body{
-    min-width: 320px;
-  }
-  p{
-    font-size: 18px;
-  }
-  /* Montag banner */
-  /* Logo bar*/
-  #desktop-logobar{
-    display: none;
-  }
-  /* Nav bar */
-  #mobile-montaglogo{
-    display: inline-block;
-    height: 100%;
-    padding-left: 1em;
-    padding-top: 1em;
-    width: 46%;
-    box-sizing: border-box;
-  }
-  #subtitle-container{
-    display: none;
-  }
-  #hamburger-menu{
-    width: 50%;
-    right: 1em;
-    padding-top: 1.5em;
-  }
-  .hamburgermenu{
-    max-width:30px;
-  }
-
-  /*Menu*/
-  .menulink{
-    margin-left: 20%;
-    margin-right: 10%;
-  }
 
   /*Pagination */
   .pagination-right{
