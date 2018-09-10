@@ -139,6 +139,7 @@ b, strong{
   width: 100%;
   position: absolute;
   z-index: 3;
+  padding-bottom: 2em;
 }
 #navmenu{
   background-color: #001020;
