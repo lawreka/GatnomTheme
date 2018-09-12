@@ -358,26 +358,32 @@ p{
 }
 #sticky-montag-logo{
   position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 20%;
+  top: 2%;
+  left: 2%;
+  width: 16%;
 }
+    @media (max-width: 700px){
+      #sticky-montag-logo{
+        width: 20%;
+      }
+    }
 #sticky-montag-logo .montaglogo{
   width: 100%;
-  padding-left: 16px;
-  padding-top: 16px;
 }
 #sticky-grover-logo{
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 2%;
+  right: 2%;
   text-align: right;
-  width: 8%;
+  width: 6%;
 }
+  @media (max-width: 700px){
+    #sticky-grover-logo{
+      width: 10%;
+    }
+  }
 #sticky-grover-logo .groverlogo{
   width:100%;
-  padding-right: 32px;
-  padding-top: 8px;
 }
 
 
