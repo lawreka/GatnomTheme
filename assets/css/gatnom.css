@@ -40,11 +40,16 @@ h3{
 }
 .blog-post-1.ff-section .post-content a{
 			color:#00ccff;
+      text-decoration: none;
+}
+.blog-post-1.ff-section .post-content a:hover{
+  color:#00ccff;
+  text-decoration: underline;
 }
 p{
-  font-family: 'Martel Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 21px;
-  color: #e4e4e4;
+  color: #0f1020;
   line-height: 1.85;
 }
     @media (max-width: 700px){
@@ -52,10 +57,6 @@ p{
         font-size: 18px;
       }
     }
-
-b, strong{
-  color: yellow;
-}
 
 /*Desktop Navigation*/
 #navigation{
@@ -249,9 +250,7 @@ b, strong{
       }
     }
 .MONTAGcover{
-  width: 250px;
   display: inline;
-  padding: 0px 32px;
 }
     @media (max-width:700px){
       .MONTAGcover{
@@ -265,20 +264,21 @@ b, strong{
     }
     @media (min-width:901px) and (max-width:1100px){
       .MONTAGcover{
-        width: 200px;
-        padding: 0px 8px;
+        max-width: 200px; */
+        /* padding: 0px 8px; */
       }
     }
     @media (min-width:1101px){
       .MONTAGcover{
-        padding: 0px 8px;
+        max-width: 250px; */
+        /* padding: 0px 8px; */
       }
     }
 
     @media (min-width:1500px){
       .MONTAGcover{
-        width: 320px;
-        padding: 0px 16px;
+        max-width: 320px; */
+        /* padding: 0px 16px; */
       }
     }
 .coverhover{
@@ -324,6 +324,9 @@ b, strong{
   height: 100%;
   top: 0;
   background-color: #fff;
+  z-index: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 #navmenu{
   width: 100%;
@@ -349,32 +352,32 @@ b, strong{
 /*Sticky logo bar*/
 #sticky-logobar{
   width: 100%;
-  height: 100px;
-  background-color: #fbfbfb;
   z-index: 2;
   position: fixed;
   top: 0;
 }
 #sticky-montag-logo{
-  position:fixed;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 20%;
 }
 #sticky-montag-logo .montaglogo{
-  width: 200px;
+  width: 100%;
   padding-left: 16px;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 #sticky-grover-logo{
-  position:fixed;
-  top: 0;
-  right: 0;
-  text-align:right;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  width: 8%;
 }
 #sticky-grover-logo .groverlogo{
-  width:69px;
-  margin-top: 15px;
-  padding-right: 16px;
+  width:100%;
+  padding-right: 32px;
+  padding-top: 8px;
 }
 
 
@@ -397,13 +400,11 @@ b, strong{
 
 /*Posts on home page*/
 #homepageposts{
-  margin-left: 16px;
-  margin-right: 16px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
     @media (max-width:700px){
       #homepageposts{
@@ -430,67 +431,54 @@ b, strong{
       }
     }
 .homepage-post-wrapper{
-  width: 500px;
-  height: 500px;
+  padding-top: 30%;
+  width: 30%;
   margin-bottom: 32px;
-}
-    @media (max-width:900px){
-      .homepage-post-wrapper{
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    @media (min-width:901px) and (max-width:1200px){
-      .homepage-post-wrapper{
-        width: 300px;
-        height: 300px;
-      }
-    }
-    @media (min-width:1401px) and (max-width:1500px){
-      .homepage-post-wrapper{
-        width: 450px;
-        height: 450px;
-      }
-    }
-    @media (min-width: 1101px) and (max-width:1400px){
-      .homepage-post-wrapper{
-        height: 350px;
-        width: 350px;
-      }
-    }
-.homepage-post-info-wrapper{
-  width: 100%;
-  height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-.homepage-post-title{
-  font-size: 20px;
+    @media (max-width:800px){
+      .homepage-post-wrapper{
+        width: 80%;
+        padding-top: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (min-width:801px) and (max-width:1200px){
+      .homepage-post-wrapper{
+        width: 40%;
+        padding-top: 40%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    @media (min-width:1401px) and (max-width:1500px){
+      .homepage-post-wrapper{
+      }
+    }
+    @media (min-width: 1101px) and (max-width:1400px){
+      .homepage-post-wrapper{
+      }
+    }
+.homepage-post-info-wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
-    @media (max-width:900px){
-      .homepage-post-title{
-        height: 500px;
-        width: 500px;
-      }
-    }
-    @media (min-width: 900px) and (max-width:1201px){
-      .homepage-post-title{
-        height: 300px;
-        width: 300px;
-      }
-    }
-    @media (min-width: 1401px) and (max-width:1500px){
-      .homepage-post-title{
-        height: 450px;
-        width: 450px;
-      }
-    }
+.homepage-post-title{
+  font-size: 20px;
+  padding: 16px;
+}
 
 .homepage-post-info a{
   color: #0f1020;
@@ -526,6 +514,14 @@ b, strong{
   display: inline-block;
   float: left;
 }
+.post-author a{
+  color: #00ccff;
+  text-decoration: none;
+}
+.post-author a:hover{
+  color:#00ccff;
+  text-decoration: underline;
+}
 .post-date{
   display: inline-block;
   float: right;
@@ -539,7 +535,7 @@ b, strong{
   vertical-align: top;
   color: #0f1020;
   line-height: 1.2em;
-  padding: 1em;
+  padding: 16px 0px;
   font-weight: bold;
 }
 .postpage-post-wrapper .post-tags{
@@ -549,6 +545,10 @@ b, strong{
 .postpage-post-wrapper .post-tags li{
   display: inline;
   text-transform: uppercase;
+}
+.postpage-post-wrapper .post-tags li a{
+  color:#00ccff;
+  text-decoration: none;
 }
 .authordatewrap{
   height: 1em;
