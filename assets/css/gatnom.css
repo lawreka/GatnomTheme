@@ -63,7 +63,41 @@ p{
         font-size: 18px;
       }
     }
-
+ul{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  color: #0f1020;
+  line-height: 1.85;
+}
+    @media (max-width: 700px){
+      ul{
+        font-size: 18px;
+      }
+    }
+#mc_embed_signup{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  color: #0f1020;
+  line-height: 1.85;
+}
+    #mc_embed_signup (max-width: 700px){
+      ul{
+        font-size: 18px;
+      }
+    }
+#mce-EMAIL{
+  display: block;
+padding: 8px;
+border: 1px solid #cecece;
+border-radius: 3px;
+}
+#mc-embedded-subscribe{
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid #0cf;
+  margin: 8px 0px;
+}
 /*Desktop Navigation*/
 #navigation{
   display: block;
@@ -163,6 +197,7 @@ p{
         margin-left:0;
         margin-right:0;
         padding-top:16px;
+        width: 150px;
       }
     }
     @media (min-width:501px) and (max-width:700px){
@@ -255,8 +290,12 @@ p{
         padding-top: 16px;
       }
     }
+#desktopprintissues a{
+  text-decoration: none;
+}
 .MONTAGcover{
   display: inline;
+  border: 1px solid #ececec;
 }
     @media (max-width:700px){
       .MONTAGcover{
@@ -306,6 +345,12 @@ p{
   width: 80px;
   padding:32px;
 }
+    @media (min-width:300px) and (max-width:700px){
+      #hamburger-menu{
+        width: 60px;
+        padding: 24px 16px;
+      }
+    }
 #hamburger{
   width: 100%;
 }
@@ -316,8 +361,8 @@ p{
   right: 0;
 }
 #antihamburger-menu{
-  width: 60px;
-  padding:32px 40px;
+  width: 40px;
+  padding: 24px 32px;
 }
 #antihamburger{
   width: 100%;
@@ -378,14 +423,14 @@ p{
 }
 #sticky-grover-logo{
   position: fixed;
-  top: 2%;
+  top: 1%;
   right: 2%;
   text-align: right;
   width: 6%;
 }
   @media (max-width: 700px){
     #sticky-grover-logo{
-      width: 10%;
+      width: 8%;
     }
   }
 #sticky-grover-logo .groverlogo{
@@ -495,6 +540,10 @@ p{
 .homepage-post-info a{
   color: #0f1020;
   font-weight: bold;
+  text-decoration: none;
+}
+.homepage-post-info a:hover{
+  color: #00ccff;
   text-decoration: none;
 }
 .homepage-post-title:hover{
@@ -620,24 +669,26 @@ p{
 }
 /*Author pages*/
 .author-info{
-  margin-top: 5.5em;
+  margin-top: 32px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 32px;
 }
-.author-name{
-  font-size: 1.5em;
-  padding-bottom: 0.5em;
-}
-.author-location{
-  text-transform: uppercase;
+.author-name h3{
+  padding-top: 32px;
 }
 .author-bio{
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 16px 0px;
 }
-.author-website{}
+.author-website a{
+  color: #00ccff;
+  text-decoration: none;
+}
+.author-website a:hover{
+  color: #00ccff;
+  text-decoration: underline;
+}
 .author .post-tags li{
   display: inline;
   text-transform: uppercase;
@@ -653,6 +704,7 @@ p{
   width: 100%;
   font-size: 1.5em;
 }
+
 /*Error page*/
 #error-page{
   width: 70%;
