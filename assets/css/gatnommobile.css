@@ -25,17 +25,6 @@
     text-align: -webkit-center;
     margin-top:8em;
   }
-  #footerlogo{
-    display: block;
-  }
-  .montagfooterlogo{
-    height: 2em;
-  }
-  #sociallinks{
-    display: block;
-    margin: 0;
-    position: relative;
-  }
   /*Posts on post page*/
   .postpage-post-wrapper{
     width: 90%;

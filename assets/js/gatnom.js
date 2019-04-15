@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log("hi");
   $("#issuesmenulink").click(function(){
     $("#issuesmenu").toggleClass("hidden");
   });
@@ -9,7 +8,6 @@ $(document).ready(function(){
   $("#antihamburger").click(function(){
     $("#menu-container").toggleClass("hidden");
   });
-  console.log("boo");
 });
 
 // print issues cover title reveal
