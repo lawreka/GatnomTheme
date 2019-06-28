@@ -8,6 +8,12 @@ $(document).ready(function(){
   $("#antihamburger").click(function(){
     $("#menu-container").toggleClass("hidden");
   });
+  $("#openmodal").click(function(){
+    $("#xyzmodal").toggleClass("hidden");
+  });
+  $("#closemodal").click(function(){
+    $("#xyzmodal").toggleClass("hidden");
+  });
 });
 
 // print issues cover title reveal

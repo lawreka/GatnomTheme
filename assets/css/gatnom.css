@@ -735,3 +735,40 @@ border-radius: 3px;
   text-align: center;
   padding-top: 1em;
 }
+
+/*XYZ Modal*/
+.modal-container{
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  margin-left: 20%;
+  height: auto;
+  margin-top:2em;
+  background-color: #fbfbfb;
+  border: 2px solid black;
+}
+#closemodal{
+  position: absolute;
+  right: 0;
+  padding: 8px 16px;
+  color: #000;
+}
+.modallink{
+  color: #000;
+}
+#modalillustration{
+  height: 200px;
+  float:right;
+  padding: 32px;
+  position:relative;
+  z-index: -1;
+  padding-bottom: 16px;
+}
+.modal-content{
+  padding: 32px;
+  max-width: 70%;
+  position:static;
+  z-index: 1;
+}
